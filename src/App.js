@@ -17,6 +17,11 @@ import Robert from './components/players/robert';
 import Rahul from './components/players/rahul';
 import Randy from './components/players/randy';
 import Bur from './components/players/bur';
+import Startup from './components/drafts/startup';
+import draft2018 from './components/drafts/2018';
+import standings2017 from './components/standings/2017';
+import standings2018 from './components/standings/2018';
+import allTimeStandings from './components/standings/alltime';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -37,6 +42,11 @@ const AppRouter = () => (
         <Route path="/rahul" component={Rahul} exact />
         <Route path="/randy" component={Randy} exact />
         <Route path="/jared" component={Bur} exact />
+        <Route path="/startup" component={Startup} exact />
+        <Route path="/2018-draft" component={draft2018} exact />
+        <Route path="/2017-standings" component={standings2017} />
+        <Route path="/2018-standings" component={standings2018} />
+        <Route path="/alltime" component={allTimeStandings} />
         <Route component={NotFound} />
       </Switch>
     </React.Fragment>

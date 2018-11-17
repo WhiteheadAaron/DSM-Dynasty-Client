@@ -9,39 +9,125 @@ const Header = () => (
       </NavLink>
     </section>
     <section className="buttonsSection">
-      <NavLink
-        to="/standings"
-        activeClassName="isActive"
-        className="standingsButton nav"
-      >
-        Standings
-      </NavLink>
+      <div class="dropdown">
+        <button class="dropbtn">Standings</button>
+        <div class="dropdown-content">
+          <NavLink
+            to="/2018-standings"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            2018
+          </NavLink>
+          <NavLink
+            to="/2017-standings"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            2017
+          </NavLink>
+          <NavLink
+            to="/alltime"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            All Time Standings
+          </NavLink>
+        </div>
+      </div>
       <div class="dropdown">
         <button class="dropbtn">Teams</button>
         <div class="dropdown-content">
-          <NavLink to="/aaron" activeClassName="isActive" className="teamsButton">Aaron Whitehead</NavLink>
-          <NavLink to="/casey" activeClassName="isActive" className="teamsButton">Casey Ambrosius</NavLink>
-          <NavLink to="/chris" activeClassName="isActive" className="teamsButton">Chris Plog</NavLink>
-          <NavLink to="/dan" activeClassName="isActive" className="teamsButton">Dan Sales</NavLink>
-          <NavLink to="/jacob" activeClassName="isActive" className="teamsButton">Jacob Hewitt</NavLink>
-          <NavLink to="/jared" activeClassName="isActive" className="teamsButton">Jared Bursik</NavLink>
-          <NavLink to="/jon" activeClassName="isActive" className="teamsButton">Jon Lambert</NavLink>
-          <NavLink to="/liam" activeClassName="isActive" className="teamsButton">Liam McGee</NavLink>
-          <NavLink to="/rahul" activeClassName="isActive" className="teamsButton">Rahul Verma</NavLink>
-          <NavLink to="/randy" activeClassName="isActive" className="teamsButton">Randy Whitehead</NavLink>
-          <NavLink to="/robert" activeClassName="isActive" className="teamsButton">Robert Raczka</NavLink>
+          <NavLink
+            to="/aaron"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Aaron Whitehead
+          </NavLink>
+          <NavLink
+            to="/casey"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Casey Ambrosius
+          </NavLink>
+          <NavLink
+            to="/chris"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Chris Plog
+          </NavLink>
+          <NavLink to="/dan" activeClassName="isActive" className="teamsButton">
+            Dan Sales
+          </NavLink>
+          <NavLink
+            to="/jacob"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Jacob Hewitt
+          </NavLink>
+          <NavLink
+            to="/jared"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Jared Bursik
+          </NavLink>
+          <NavLink to="/jon" activeClassName="isActive" className="teamsButton">
+            Jon Lambert
+          </NavLink>
+          <NavLink
+            to="/liam"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Liam McGee
+          </NavLink>
+          <NavLink
+            to="/rahul"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Rahul Verma
+          </NavLink>
+          <NavLink
+            to="/randy"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Randy Whitehead
+          </NavLink>
+          <NavLink
+            to="/robert"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Robert Raczka
+          </NavLink>
         </div>
       </div>
-      <NavLink
-        to="/drafts"
-        activeClassName="isActive"
-        className="draftsButton nav"
-        onClick={() => {
-          console.log("Drafts");
-        }}
-      >
-        Drafts
-      </NavLink>
+      <div class="dropdown">
+        <button class="dropbtn">Drafts</button>
+        <div class="dropdown-content">
+          <NavLink
+            to="/startup"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            Startup Draft
+          </NavLink>
+          <NavLink
+            to="/2018-draft"
+            activeClassName="isActive"
+            className="teamsButton"
+          >
+            2018 Draft
+          </NavLink>
+        </div>
+      </div>
     </section>
   </header>
 );
