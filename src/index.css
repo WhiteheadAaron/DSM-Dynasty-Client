@@ -64,8 +64,8 @@ code {
   text-decoration: none;
 }
 
-.nav:hover {
-  transform: scale(1.2);
+.teamsButton:hover {
+  background-color: lightgray;
 }
 
 .isActive {
