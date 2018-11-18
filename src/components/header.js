@@ -9,9 +9,9 @@ const Header = () => (
       </NavLink>
     </section>
     <section className="buttonsSection">
-      <div class="dropdown">
-        <button class="dropbtn">Standings</button>
-        <div class="dropdown-content">
+      <div className="dropdown">
+        <button className="dropbtn">Standings</button>
+        <div className="dropdown-content">
           <NavLink
             to="/2018-standings"
             activeClassName="isActive"
@@ -35,9 +35,9 @@ const Header = () => (
           </NavLink>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">Teams</button>
-        <div class="dropdown-content">
+      <div className="dropdown">
+        <button className="dropbtn">Teams</button>
+        <div className="dropdown-content">
           <NavLink
             to="/aaron"
             activeClassName="isActive"
@@ -109,9 +109,9 @@ const Header = () => (
           </NavLink>
         </div>
       </div>
-      <div class="dropdown">
-        <button class="dropbtn">Drafts</button>
-        <div class="dropdown-content">
+      <div className="dropdown">
+        <button className="dropbtn">Drafts</button>
+        <div className="dropdown-content">
           <NavLink
             to="/startup"
             activeClassName="isActive"

@@ -1,5 +1,7 @@
 import React from "react";
+import { connect } from 'react-redux';
 import './dropdown.css';
+import './draft.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./components/home";
@@ -53,4 +55,8 @@ const AppRouter = () => (
   </BrowserRouter>
 );
 
-export default AppRouter;
+function mapStateToProps(state) {
+  return state;
+}
+
+export default connect(mapStateToProps)(AppRouter);

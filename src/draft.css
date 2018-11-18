@@ -1,0 +1,68 @@
+.draftHeader {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .draftGrid {
+    display: grid;
+    grid-template-rows: repeat(10, 50vh);
+    grid-template-columns: repeat(10, 1fr);
+} */
+/* 
+.smallDraftGrid {
+    display: grid;
+    grid-template-rows: repeat(30, 20vh);
+    grid-template-columns: repeat(10, 1fr);
+} */
+
+.playerSection {
+  grid-column: 2 / 10;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 4.5vh);
+  max-height: 45vh;
+  margin-bottom: 5vh;
+  text-align: center;
+  border-bottom: solid lightgray 1px;
+}
+
+.playerSmallSection {
+  grid-column: 2 / 10;
+  text-align: center;
+  border-bottom: solid lightgray 1px;
+}
+
+.playerSection h3 {
+  grid-row: 1 / 2;
+  grid-column: 1 / 11;
+}
+
+.playerSection h4 {
+  grid-column: 1 / 11;
+  grid-row: 2 / 4;
+}
+
+.imgBox {
+  grid-row: 4 / 11;
+  grid-column: 1 / 11;
+  margin-bottom: 3vh;
+}
+
+.playerSection img {
+  grid-column: 1 / 11;
+  grid-row: 5 / 11;
+  height: 100%;
+  width: auto;
+}
+
+.filterButt {
+  background-color: lightgray;
+  width: 100%;
+}
+
+.filterDrop {
+  width: auto;
+  margin-left: 30px;
+}

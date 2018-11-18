@@ -26,6 +26,11 @@
 
 .teamsButton {
     font-size: 20px;
+    display: block;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    border: none;
 }
 
 /* Links inside the dropdown */
@@ -42,7 +47,7 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #fdfdfd;}
+.dropdown:hover .dropbtn, .teamsButton {background-color: #fdfdfd;}
 
 .isActive:hover {
     background-color: yellow;
