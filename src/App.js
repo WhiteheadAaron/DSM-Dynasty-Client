@@ -3,10 +3,7 @@ import { connect } from 'react-redux';
 import './dropdown.css';
 import './draft.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Header from "./components/header";
 import Home from "./components/home";
-import Standings from "./components/standings";
-import Drafts from "./components/drafts";
 import NotFound from "./components/notfound";
 import Aaron from './components/players/aaron';
 import Hewitt from './components/players/hewitt';
@@ -28,11 +25,8 @@ import allTimeStandings from './components/standings/alltime';
 const AppRouter = () => (
   <BrowserRouter>
     <React.Fragment>
-      <Header />
       <Switch>
         <Route path="/" component={Home} exact />
-        <Route path="/standings" component={Standings} exact />
-        <Route path="/drafts" component={Drafts} exact />
         <Route path="/aaron" component={Aaron} exact />
         <Route path="/jacob" component={Hewitt} exact />
         <Route path="/jon" component={Jon} exact />

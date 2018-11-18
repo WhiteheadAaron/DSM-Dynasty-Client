@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { filter } from "../../actions/draft";
+import Header from "../header";
 
 function draft2018(props) {
   let draftPicks = [
@@ -59,7 +60,7 @@ function draft2018(props) {
       drafter: "Aaron"
     },
     {
-      pick: 1.10,
+      pick: 1.1,
       player: "Sony Michel",
       img: "sony",
       drafter: "Robert"
@@ -269,7 +270,6 @@ function draft2018(props) {
               alt={`${item.player}`}
             />
           </div>
-          <h4>Drafted by: {item.drafter}</h4>
         </div>
       );
     });
@@ -278,19 +278,18 @@ function draft2018(props) {
 
   function generateSmallFilterHtml() {
     let newArr = draftPicks2.filter(
-        item => item.drafter === props.filterReducer.filter.item
+      item => item.drafter === props.filterReducer.filter.item
+    );
+    let newArr2 = newArr.map((item, index) => {
+      return (
+        <div key={index} className={`playerSmallSection pick${item.pick}`}>
+          <h3>
+            {item.pick}. {item.player}
+          </h3>
+        </div>
       );
-      let newArr2 = newArr.map((item, index) => {
-        return (
-          <div key={index} className={`playerSmallSection pick${item.pick}`}>
-            <h3>
-              {item.pick}. {item.player}
-            </h3>
-            <h4>Drafted by: {item.drafter}</h4>
-          </div>
-        );
-      });
-      return newArr2;
+    });
+    return newArr2;
   }
 
   const playerDropDown = () => {
@@ -314,7 +313,8 @@ function draft2018(props) {
           onClick={() => {
             props.dispatch(filter({ item }));
           }}
-          className="teamsButton filterButton"
+          className="teamsButton"
+          data-close-on-click="true"
         >
           {item}
         </button>
@@ -324,14 +324,17 @@ function draft2018(props) {
     return (
       <header role="banner" className="draftHeader">
         <h2 className="drafth1">2018 Rookie Draft</h2>
-        <div className="dropdown filterDrop">
-          <button className="dropbtn filterButt">Filter</button>
-          <div className="dropdown-content">
+        <div className="dropdown filterDrop" data-close-on-click="true">
+          <button className="dropbtn filterButt" data-close-on-click="true">
+            Filter
+          </button>
+          <div className="dropdown-content" data-close-on-click="true">
             <button
               onClick={() => {
                 props.dispatch(filter(null));
               }}
               className="teamsButton"
+              data-close-on-click="true"
             >
               No Filter
             </button>
@@ -345,6 +348,7 @@ function draft2018(props) {
   if (!props.filterReducer.filter) {
     return (
       <React.Fragment>
+        <Header />
         {playerDropDown()}
         <section className="draftGrid">{generateHtml()}</section>
         <section className="smallDraftGrid">{generateSmallHtml()}</section>
@@ -354,13 +358,19 @@ function draft2018(props) {
 
   if (props.filterReducer.filter) {
     return (
-      <React.Fragment>
+      <div className="filterBox">
+        <Header />
         {playerDropDown()}
+        <h3>{props.filterReducer.filter.item}</h3>
         <section className="draftGrid">{generateFilterHtml()}</section>
-        <section className="smallDraftGrid">{generateSmallFilterHtml()}</section>
-      </React.Fragment>
+        <section className="smallDraftGrid">
+          {generateSmallFilterHtml()}
+        </section>
+      </div>
     );
   }
+
+
 }
 
 function mapStateToProps(state) {
