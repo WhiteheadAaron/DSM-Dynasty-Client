@@ -91,6 +91,7 @@ button {
   }
   
   .dropbtn {
+    border: solid 1px yellow;
     font-size: 18px;
     width: 100px;
   }
@@ -104,6 +105,7 @@ button {
   }
 
   .dropbtn {
+    border: solid 1px red;
     font-size: 15px;
     width: auto;
   }
@@ -114,7 +116,9 @@ button {
 }
 
 @media only screen and (max-width: 450px) {
+
   .dropbtn {
+    border: solid 1px green;
     font-size: 14px;
     width: auto;
     margin-left: 10px;
@@ -123,11 +127,12 @@ button {
   .homeButton {
     font-size: 20px;
   }
-
 }
 
 @media only screen and (max-width: 350px) {
+
   .dropbtn {
+    border: solid 1px pink;
     font-size: 12px;
     width: auto;
     margin-left: 0px;
