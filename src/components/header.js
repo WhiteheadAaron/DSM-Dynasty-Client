@@ -11,7 +11,7 @@ const Header = () => (
     <section className="buttonsSection">
       <div className="dropdown">
         <button className="dropbtn">Standings</button>
-        <div className="dropdown-content">
+        <div className="dropdown-content standingsContent">
           <NavLink
             to="/2018-standings"
             activeClassName="isActive"

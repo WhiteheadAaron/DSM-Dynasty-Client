@@ -113,7 +113,7 @@ button {
 
 @media only screen and (max-width: 450px) {
   .dropbtn {
-    font-size: 14px;
+    font-size: 13.5px;
     width: auto;
     margin-left: 0px;
   }

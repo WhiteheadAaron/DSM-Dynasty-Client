@@ -1,54 +1,99 @@
 /* Dropdown Button */
 .dropbtn {
-    background-color: rgb(192, 192, 192);
-    color: black;
-    border: none;
-    font-size: 24px;
-    font-weight: 500;
+  background-color: rgb(192, 192, 192);
+  color: black;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    font-size: 10px;
+  display: none;
+  position: absolute;
+  left: -60px;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 10px;
 }
 
 .teamsButton {
-    font-size: 20px;
-    display: block;
-    width: 100%;
-    color: black;
-    text-decoration: none;
-    border: none;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  border: none;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
+  color: black;
+  text-decoration: none;
+  display: block;
 }
 
 /* Change color of dropdown links on hover */
 /* .dropdown-content a:hover {background-color: #ddd;} */
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn, .teamsButton {background-color: #fdfdfd;}
+.dropdown:hover .dropbtn,
+.teamsButton {
+  background-color: #fdfdfd;
+}
 
 .isActive:hover {
-    background-color: yellow;
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 800px) {
+  .dropdown-content {
+    left: -85px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dropdown-content {
+    left: -135px;
+    font-size: 10px;
+  }
+
+  .standingsContent {
+    left: -110px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dropdown-content {
+    left: -150px;
+    font-size: 10px;
+  }
+
+  .standingsContent {
+    left: -130px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .dropdown-content {
+    left: -150px;
+  }
+
+  .standingsContent {
+    left: -130px;
+  }
 }
