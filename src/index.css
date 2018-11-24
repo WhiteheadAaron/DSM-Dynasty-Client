@@ -79,7 +79,7 @@ button {
 
 @media only screen and (max-width: 800px) {
   .buttonsSection {
-    grid-column: 7 / 9;
+    grid-column: 5 / 10;
   }
   
   .homeBox {
@@ -98,9 +98,14 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .buttonsSection {
+    grid-column: 6 / 10;
+  }
+
   .dropbtn {
     font-size: 15px;
-    width: 75px;
+    width: auto;
   }
 
   .homeButton {
@@ -119,9 +124,6 @@ button {
     font-size: 20px;
   }
 
-  .teamDrop {
-    margin-left: 10px;
-  }
 }
 
 @media only screen and (max-width: 350px) {
@@ -129,7 +131,6 @@ button {
     font-size: 12px;
     width: auto;
     margin-left: 0px;
-    border: solid 1px black;
   }
 
   .homeButton {
