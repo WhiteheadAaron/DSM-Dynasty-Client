@@ -36,7 +36,7 @@ const Header = () => (
         </div>
       </div>
       <div className="dropdown">
-        <button className="dropbtn">Teams</button>
+        <button className="dropbtn teamDrop">Teams</button>
         <div className="dropdown-content">
           <NavLink
             to="/aaron"

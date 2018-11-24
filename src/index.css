@@ -19,10 +19,9 @@ code {
 .App {
   text-align: center;
   display: grid;
+  
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1.5vh);
-  max-height: 100vh;
-  max-width: 100vw;
   background-color: rgb(192, 192, 192);
   border-bottom: solid 1px black;
 }
@@ -32,7 +31,7 @@ button {
 }
 
 .buttonsSection {
-  grid-column: 5 / 10;
+  grid-column: 5 / 11;
   grid-row: 1 / 11;
   display: flex;
   justify-content: space-evenly;
@@ -56,13 +55,9 @@ button {
   text-decoration: none;
 }
 
-.standingsButton, .draftsButton {
-  font-size: 24px;
-  font-weight: 500;
-}
 
 .nav, .dropbtn {
-  margin: auto;
+  margin-left: 15px;
   width: 125px;
   color: black;
   text-decoration: none;
@@ -80,4 +75,51 @@ button {
 .isActive:hover {
   transform: none;
   background-color: rgb(161, 161, 161);
+}
+
+@media only screen and (max-width: 800px) {
+  .buttonsSection {
+    grid-column: 7 / 9;
+  }
+  
+  .homeBox {
+    grid-column: 1 / 5;
+  }
+  
+  .homeButton {
+    font-size: 25px;
+  }
+  
+  .dropbtn {
+    font-size: 18px;
+    width: 100px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .dropbtn {
+    font-size: 15px;
+    width: 75px;
+  }
+
+  .homeButton {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dropbtn {
+    font-size: 12px;
+    width: 48px;
+    margin: 0;
+  }
+
+  .homeButton {
+    font-size: 17px;
+  }
+
+  .teamDrop {
+    margin-left: 17px;
+  }
 }

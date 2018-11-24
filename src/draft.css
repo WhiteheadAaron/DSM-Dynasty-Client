@@ -5,18 +5,6 @@
   align-items: center;
 }
 
-/* .draftGrid {
-    display: grid;
-    grid-template-rows: repeat(10, 50vh);
-    grid-template-columns: repeat(10, 1fr);
-} */
-/* 
-.smallDraftGrid {
-    display: grid;
-    grid-template-rows: repeat(30, 20vh);
-    grid-template-columns: repeat(10, 1fr);
-} */
-
 .playerSection {
   grid-column: 2 / 10;
   display: grid;
@@ -69,4 +57,26 @@
 
 .filterBox {
   text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .drafth1 {
+    font-size: 20px;
+  }
+
+  .playerSection h3 {
+    font-size: 18px;
+  }
+  
+  .playerSection h4 {
+    font-size: 18px;
+  }
+
+  .smallPlayerSection h3 {
+    font-size: 18px;
+  }
+  
+  .smallPlayerSection h4 {
+    font-size: 18px;
+  }
 }
