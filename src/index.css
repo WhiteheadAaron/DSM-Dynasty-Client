@@ -19,7 +19,7 @@ code {
 .App {
   text-align: center;
   display: grid;
-  
+
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1.5vh);
   background-color: rgb(192, 192, 192);
@@ -55,8 +55,8 @@ button {
   text-decoration: none;
 }
 
-
-.nav, .dropbtn {
+.nav,
+.dropbtn {
   margin-left: 15px;
   width: 125px;
   color: black;
@@ -81,31 +81,27 @@ button {
   .buttonsSection {
     grid-column: 5 / 10;
   }
-  
+
   .homeBox {
     grid-column: 1 / 5;
   }
-  
+
   .homeButton {
     font-size: 25px;
   }
-  
+
   .dropbtn {
-    border: solid 1px yellow;
     font-size: 18px;
     width: 100px;
   }
-  
 }
 
 @media only screen and (max-width: 600px) {
-
   .buttonsSection {
     grid-column: 6 / 10;
   }
 
   .dropbtn {
-    border: solid 1px red;
     font-size: 15px;
     width: auto;
   }
@@ -116,12 +112,10 @@ button {
 }
 
 @media only screen and (max-width: 450px) {
-
   .dropbtn {
-    border: solid 1px green;
     font-size: 14px;
     width: auto;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .homeButton {
@@ -129,10 +123,8 @@ button {
   }
 }
 
-@media only screen and (max-width: 350px) {
-
+@media only screen and (max-width: 360px) {
   .dropbtn {
-    border: solid 1px pink;
     font-size: 12px;
     width: auto;
     margin-left: 0px;
