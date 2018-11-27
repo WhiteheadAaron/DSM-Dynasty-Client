@@ -236,7 +236,6 @@ function draft2018(props) {
         </div>
       );
     });
-
     return newArr;
   }
 
@@ -369,8 +368,6 @@ function draft2018(props) {
       </div>
     );
   }
-
-
 }
 
 function mapStateToProps(state) {
