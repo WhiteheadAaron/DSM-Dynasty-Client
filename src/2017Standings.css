@@ -1,0 +1,37 @@
+.standingsSection {
+  display: grid;
+  grid-template-columns: repeat(10, 10vw);
+  grid-template-rows: repeat(10, 40vh);
+  margin-bottom: 5vh;
+  text-align: center;
+  border-bottom: solid lightgray 1px;
+}
+
+.standingsHeader {
+    text-align: center;
+}
+
+.oneSection {
+    grid-row: 1 / 2;
+    grid-column: 1 / 11;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+}
+
+.twoSection {
+    grid-row: 2 / 3;
+    grid-column: 1 / 11;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+}

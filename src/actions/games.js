@@ -20,10 +20,8 @@ export const fetchGamesError = value => {
 }
 
 export const getGamesAction = () => dispatch => {
-    dispatch(fetchGamesRequest())
     fetch('https://dsm-dynasty-server.herokuapp.com/games')
         .then(res => res.json())
         .then(res => dispatch(fetchGamesSuccess(res)))
         .catch(err => dispatch(fetchGamesError()))
 }
-

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import "./dropdown.css";
 import "./draft.css";
+import './2017Standings.css';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/home";
 import NotFound from "./components/notfound";

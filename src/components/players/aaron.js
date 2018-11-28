@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import Header from "../header";
 
+
 function Aaron(props) {
   function getPlayerGames(player) {
 
@@ -34,7 +35,7 @@ function Aaron(props) {
         console.log('goodbye');
         played = played + 1;
         pointsAgainst = pointsAgainst + item.p1Points;
-        pointsFor = pointsFor + item.p2points;
+        pointsFor = pointsFor + item.p2Points;
         if (item.p2points > item.p1Points) {
           wins = wins + 1;
         }
