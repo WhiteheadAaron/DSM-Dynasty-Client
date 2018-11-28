@@ -21,7 +21,7 @@ function standings2017 (props) {
         if (item.p1Points > item.p2Points) {
           wins = wins + 1;
         }
-        if (item.p2points > item.p1Points) {
+        if (item.p2Points > item.p1Points) {
           losses = losses + 1;
         }
       }
@@ -29,7 +29,7 @@ function standings2017 (props) {
         played = played + 1;
         pointsAgainst = pointsAgainst + item.p1Points;
         pointsFor = pointsFor + item.p2Points;
-        if (item.p2points > item.p1Points) {
+        if (item.p2Points > item.p1Points) {
           wins = wins + 1;
         } else {
           losses = losses + 1;
@@ -41,8 +41,8 @@ function standings2017 (props) {
       <React.Fragment>
         <h3>Wins: {wins}</h3>
         <h3>Losses: {losses}</h3>
-        <h3>Points For: {pointsFor}</h3>
-        <h3>Points Against: {pointsAgainst}</h3>
+        <h3>Points For: {pointsFor.toFixed(1)}</h3>
+        <h3>Points Against: {pointsAgainst.toFixed(1)}</h3>
       </React.Fragment>
     );
   }

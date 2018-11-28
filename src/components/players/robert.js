@@ -21,7 +21,7 @@ function Robert(props) {
           console.log("test");
           wins = wins + 1;
         }
-        if (item.p2points > item.p1Points) {
+        if (item.p2Points > item.p1Points) {
           console.log("test2");
           losses = losses + 1;
         }
@@ -31,7 +31,7 @@ function Robert(props) {
         played = played + 1;
         pointsAgainst = pointsAgainst + item.p1Points;
         pointsFor = pointsFor + item.p2Points;
-        if (item.p2points > item.p1Points) {
+        if (item.p2Points > item.p1Points) {
           wins = wins + 1;
         } else {
           losses = losses + 1;

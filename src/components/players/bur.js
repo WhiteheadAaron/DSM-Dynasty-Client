@@ -26,7 +26,7 @@ function Jared(props) {
           console.log('test')
           wins = wins + 1;
         }
-        if (item.p2points > item.p1Points) {
+        if (item.p2Points > item.p1Points) {
           console.log('test2');
           losses = losses + 1;
         }
@@ -36,7 +36,7 @@ function Jared(props) {
         played = played + 1;
         pointsAgainst = pointsAgainst + item.p1Points;
         pointsFor = pointsFor + item.p2Points;
-        if (item.p2points > item.p1Points) {
+        if (item.p2Points > item.p1Points) {
           wins = wins + 1;
         }
         else {
@@ -62,8 +62,8 @@ function Jared(props) {
       <h1>Jared Page</h1>
       <h2>Wins: {myObj.wins}</h2>
       <h2>Losses: {myObj.losses}</h2>
-      <h2>Points For: {myObj.pointsFor}</h2>
-      <h2>Points Against: {myObj.pointsAgainst}</h2>
+      <h2>Points For: {myObj.pointsFor.toFixed(1)}</h2>
+      <h2>Points Against: {myObj.pointsAgainst.toFixed(1)}</h2>
     </div>
   );
 }
